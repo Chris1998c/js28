@@ -1,6 +1,8 @@
-function sum(num1, num2, num3) {
-  return num1 + num2 + num3;
+function somma(...numeri) {
+  return numeri.reduce((totale, numeri) => totale + numeri, 0);
 }
 
-const numbers = [1, 2, 4];
-console.log(sum(...numbers));
+const numeri = [1, 2, 3,5,4,3,5,6,12];
+
+
+console.log(somma(...numeri));
